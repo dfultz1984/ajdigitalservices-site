@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AJ Digital Services LLC — makers of Idemo</title>
+<meta name="description" content="AJ Digital Services LLC is a US software company building Idemo, a mobile app that teaches Bosnian the way it deserves to be taught.">
+<meta name="theme-color" content="#0F172A">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="icon" href="images/favicon.png">
+<style>
+  :root{
+    --bg:#0F172A; --bg2:#13111C; --gold:#FECB00; --text:#F8FAFC;
+    --muted:#94A3B8; --dim:#94A3B8; --line:rgba(255,255,255,.12);
+    --card:rgba(255,255,255,.05);
+    --serif:Georgia,"Times New Roman",serif;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:linear-gradient(160deg,var(--bg) 0%,var(--bg2) 100%);
+    background-attachment:fixed; color:var(--text); font-family:var(--sans);
+    font-size:17px; line-height:1.65; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:960px;margin:0 auto;padding:0 24px}
+  a{color:var(--gold)}
+  a:hover{opacity:.85}
+  a:focus-visible{outline:3px solid var(--gold);outline-offset:4px;border-radius:3px}
+  .skip-link{
+    position:absolute;left:16px;top:-80px;z-index:10;padding:10px 14px;
+    background:var(--gold);color:var(--bg);font-weight:700;text-decoration:none
+  }
+  .skip-link:focus{top:16px}
+
+  header{padding:28px 0;border-bottom:1px solid var(--line)}
+  .brandrow{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  .brand{font-family:var(--sans);font-weight:700;font-size:15px;letter-spacing:.14em;text-transform:uppercase;color:var(--text);text-decoration:none}
+  .brand span{color:var(--gold)}
+  nav{display:flex;gap:22px;font-size:15px;font-weight:500}
+  nav a{color:var(--muted);text-decoration:none}
+  nav a:hover{color:var(--gold)}
+
+  .hero{padding:76px 0 60px;text-align:center}
+  .kicker{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:600;margin:0 0 18px}
+  h1{font-family:var(--serif);font-size:clamp(38px,7vw,66px);line-height:1.08;margin:0 0 20px;font-style:italic}
+  .lede{font-size:clamp(18px,2.4vw,21px);color:var(--muted);max-width:660px;margin:0 auto}
+
+  section{padding:56px 0;border-top:1px solid var(--line)}
+  h2{font-family:var(--serif);font-size:clamp(27px,4vw,38px);margin:0 0 18px;line-height:1.2}
+  h3{font-family:var(--sans);font-size:19px;font-weight:600;margin:0 0 8px;color:var(--text)}
+  p{margin:0 0 18px;color:var(--muted)}
+  p.body-strong{color:var(--text)}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(248px,1fr));gap:22px;margin-top:32px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px}
+  .card p{margin:0;font-size:15.5px}
+
+  .shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:24px;margin-top:36px}
+  .shot{text-align:center}
+  .shot img{width:100%;max-width:280px;height:auto;border-radius:18px;border:1px solid var(--line);display:block;margin:0 auto 12px}
+  .shot span{font-size:14px;color:var(--dim)}
+
+  .contact-card{background:var(--card);border:1px solid rgba(254,203,0,.3);border-radius:18px;padding:32px;margin-top:26px}
+  .contact-card .row{margin-bottom:18px}
+  .contact-card .row:last-child{margin-bottom:0}
+  .label{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);font-weight:600;margin:0 0 4px}
+  .value{font-size:18px;color:var(--text);margin:0}
+  .value a{text-decoration:none;font-weight:600;overflow-wrap:anywhere}
+
+  footer{border-top:1px solid var(--line);padding:40px 0 56px;font-size:14.5px;color:var(--dim)}
+  footer p{color:var(--dim);font-size:14.5px;margin:0 0 10px}
+  .legal-links{display:flex;gap:20px;flex-wrap:wrap;margin-top:14px}
+  .legal-links a{text-decoration:none;font-weight:500}
+
+  @media (max-width:560px){
+    body{font-size:16px}
+    .hero{padding:52px 0 42px}
+    section{padding:44px 0}
+    nav{gap:16px;font-size:14px}
+  }
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<header>
+  <div class="wrap brandrow">
+    <a class="brand" href="/">AJ Digital <span>Services</span></a>
+    <nav aria-label="Primary">
+      <a href="#idemo">Idemo</a>
+      <a href="#company">Company</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content">
+  <div class="wrap">
+
+    <div class="hero">
+      <p class="kicker">AJ Digital Services LLC</p>
+      <h1>Bosnian, taught<br>like it deserves.</h1>
+      <p class="lede">We build language software for people learning the language of their family. Our first app is Idemo — a guided journey across Bosnia, from your first <em>zdravo</em> to dinner at the family table.</p>
+    </div>
+
+    <section id="idemo">
+      <h2>Idemo — Learn Bosnian</h2>
+      <p class="body-strong">Idemo is a journey across Bosnia, not a streak machine. You travel with Edo, an American learning the language of his family, alongside his friends Amila and Mirko — and teaching modules build toward language you can genuinely use with a real person.</p>
+
+      <div class="grid">
+        <div class="card">
+          <h3>A journey with a finish line</h3>
+          <p>Five real cities — Sarajevo, Mostar, Tuzla, Banja Luka and Bihać — a story you move through, and a clear end.</p>
+        </div>
+        <div class="card">
+          <h3>Real conversations</h3>
+          <p>You answer, you ask back, you say things that are true. You never simply echo a line back.</p>
+        </div>
+        <div class="card">
+          <h3>Verb-first</h3>
+          <p>Teaching modules center on verbs you will really use — present, past and future — then put them into conversations that matter.</p>
+        </div>
+        <div class="card">
+          <h3>Hear everything</h3>
+          <p>Natural, carefully produced audio for lessons, reference words, and a new phrase every day.</p>
+        </div>
+        <div class="card">
+          <h3>A reference in your pocket</h3>
+          <p>Verbs in every tense, plus numbers, family words, time and greetings — each a tap away from hearing it.</p>
+        </div>
+        <div class="card">
+          <h3>Remember what you learn</h3>
+          <p>Review brings back exactly what you are about to forget, and regular reviews bring the cast back together to use everything you have learned.</p>
+        </div>
+      </div>
+
+      <div class="shots">
+        <div class="shot">
+          <img src="images/map.jpg" alt="Idemo map showing Sarajevo, Mostar, Tuzla, Banja Luka, and Bihać" width="585" height="1266" loading="lazy" decoding="async">
+          <span>A journey across five cities</span>
+        </div>
+        <div class="shot">
+          <img src="images/lesson.jpg" alt="An Idemo lesson screen teaching the Bosnian phrase Ja sam" width="585" height="1266" loading="lazy" decoding="async">
+          <span>Verb-first lessons</span>
+        </div>
+        <div class="shot">
+          <img src="images/reference.jpg" alt="The Idemo reference hub listing Bosnian language topics" width="585" height="1266" loading="lazy" decoding="async">
+          <span>A complete reference</span>
+        </div>
+      </div>
+
+      <p style="margin-top:32px">Idemo is coming to Android and iOS. To hear when it launches, email us at <a href="mailto:support@ajdigitalservices.ai">support@ajdigitalservices.ai</a>.</p>
+    </section>
+
+    <section id="company">
+      <h2>About the company</h2>
+      <p>AJ Digital Services LLC is a software company registered in the State of Florida, United States. We design and publish mobile applications, beginning with language learning.</p>
+      <p>We build a small number of products and look after them properly. Idemo exists because the Bosnian language deserves teaching material as considered as the language itself — and because the people learning it are usually learning it for someone they love.</p>
+      <p>We collect only the information an app needs in order to work. We do not sell personal data, and we do not share it beyond the service providers required to operate and distribute our software. Our privacy policy is linked below.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>For support, press, privacy requests, or account deletion requests, contact us directly:</p>
+
+      <div class="contact-card">
+        <div class="row">
+          <p class="label">Email</p>
+          <p class="value"><a href="mailto:support@ajdigitalservices.ai">support@ajdigitalservices.ai</a></p>
+        </div>
+        <div class="row">
+          <p class="label">Company</p>
+          <p class="value">AJ Digital Services LLC</p>
+        </div>
+        <div class="row">
+          <p class="label">Registered</p>
+          <p class="value">State of Florida, United States</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>&copy; 2026 AJ Digital Services LLC. All rights reserved.</p>
+    <p>Idemo and the Idemo logo are trademarks of AJ Digital Services LLC.</p>
+    <p>This static site uses no analytics, forms, or advertising cookies. It is hosted by <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Pages</a>, which may log visitor IP addresses for security.</p>
+    <div class="legal-links">
+      <a href="https://legal.ajdigitalservices.ai/privacy">Privacy Policy</a>
+      <a href="https://legal.ajdigitalservices.ai/terms">Terms of Service</a>
+      <a href="mailto:support@ajdigitalservices.ai">Contact</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
